@@ -23,10 +23,12 @@ function makeGrid() {
   const width = inputWidth.val();
 
   for (let i = 0; i < height; i++) {
-    let row = $('<tr></tr>');
+    const row = $('<tr></tr>');
     for (let j = 0; j < width; j++) {
       row.append('<td></td>');
     }
     canvas.append(row);
   }
 }
+
+makeGrid();
